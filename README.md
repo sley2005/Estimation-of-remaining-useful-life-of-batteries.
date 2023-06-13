@@ -39,10 +39,12 @@ The number of potential combinations for these hyper parameters is quite high so
 Finally, the best hyperparameters are used to train a final random forest model, and its performance is evaluated on the test data using the MSE metric. The MSE indicates how well the model predicts the RUL values, with lower values indicating better performance.
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
+The model showed good results for predicting RUL with an MSE of 760. The model also showed that the automated baysian optimisation converged on hyperparameters quicker that the grid search.
 
 You can include images of plots using the code below:
-![Screenshot](image.png)
+![Screenshot](bayesian_vs_gridsearch.png)
+![Screenshot](baysian_opt_Results.png)
+![Screenshot](model_performance.png)
 
 ## (OPTIONAL: CONTACT DETAILS)
 If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
