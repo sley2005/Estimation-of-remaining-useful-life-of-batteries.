@@ -7,13 +7,13 @@ The data used for this model is the HNEI Hawaii Natural Energy Institute NMC-LCO
 
 The dataset underwent preprocessing by Ignacio Vinuales, who created seven features for predicting the remaining useful life (RUL). These features were used in training the model for this project. There feature where:
 
-- •	Discharge Time (s)
-- •	Time at 4.15V (s)
-- •	Time Constant Current (s)
-- •	Decrement 3.6-3.4V (s)
-- •	Max. Voltage Discharge (V)
-- •	Min. Voltage Charge (V)
-- •	Charging Time (s)
+- Discharge Time (s)
+- Time at 4.15V (s)
+- Time Constant Current (s)
+- Decrement 3.6-3.4V (s)
+- Max. Voltage Discharge (V)
+- Min. Voltage Charge (V)
+- Charging Time (s)
 -
 Distribution: The dataset has been distributed through the battery archive website, https://www.batteryarchive.org/list.html, and GitHub. It is subject to the Creative Commons Attribution 4.0 International License.
 Maintenance: The dataset is currently maintained by Ignacio Vinuales and Battery archive. The GitHub repository (https://github.com/ignavinuales/Battery_RUL_Prediction) and the HNEI website (https://www.batteryarchive.org/faq.html) provide additional information and support for the dataset.
@@ -29,10 +29,10 @@ Moreover, Random Forest models are robust to outliers and missing data, allowing
 
 The hyperparameters  used for the RandomForestRegressor model are:
 
-- •	n_estimators: The number of decision trees in the random forest.
-- •	max_depth: The maximum depth of each decision tree.
-- •	min_samples_split: The minimum number of samples required to split an internal node.
-- •	min_samples_leaf: The minimum number of samples required to be at a leaf node.
+- n_estimators: The number of decision trees in the random forest.
+- max_depth: The maximum depth of each decision tree.
+- min_samples_split: The minimum number of samples required to split an internal node.
+- min_samples_leaf: The minimum number of samples required to be at a leaf node.
 
 The number of potential combinations for these hyper parameters is quite high so Bayesian optimisation was used. A random search was used to find the initial set of datapoints to be used for the baysian optimisation process.  The optimization process iteratively selects candidate hyperparameters based on Upper confidence bounds criterion and evaluates their performance using the mean squared error (MSE). The process continues for a specified number of iterations, updating the best MSE and hyperparameters along the way.
 
