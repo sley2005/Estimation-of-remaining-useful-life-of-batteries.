@@ -12,7 +12,9 @@ After the conditioning tests, 15 out of the 51 cells were subjected to 1000 cycl
 
 ## Preprocessing/cleaning/labelling
 The data used in my model was pre-processed to extract features that could be used to predict Remaining useful life in instances where capacity cannot be measured. The feature extraction was conducted by IGNACIO VINUALES who made the data available on Github. The seven features created are shown below
-   
+![Screenshot](Picture1.png)  ![Screenshot](Picture2.png) ![Screenshot](Picture3.png)   
+
+
 ignavinuales, 2022 [online] [Accessed 7 June 2023]. Available from:
 https://github.com/ignavinuales/Battery_RUL_Prediction
 
