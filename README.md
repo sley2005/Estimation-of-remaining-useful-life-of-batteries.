@@ -41,7 +41,6 @@ Finally, the best hyperparameters are used to train a final random forest model,
 ## RESULTS
 The model showed good results for predicting RUL with an MSE of 760. The model also showed that the automated baysian optimisation converged on hyperparameters quicker that the grid search.
 
-You can include images of plots using the code below:
 ![Screenshot](bayesian_vs_gridsearch.png)
 ![Screenshot](baysian_opt_Results.png)
 ![Screenshot](model_performance.png)
