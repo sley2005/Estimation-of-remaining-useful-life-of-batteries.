@@ -17,8 +17,9 @@ Cycle Index: It represents the number of cycles the battery has undergone. This 
 - **F6: Min. Voltage Charge (V)**: This input indicates the minimum voltage observed during the battery's charging process. It helps the model understand the charging behavior and estimate the remaining useful life based on the minimum charging voltage reached.
 - **F7: Charging Time (s)**: It denotes the duration of the battery's charging process. This input provides information about the time taken to recharge the battery fully. It contributes to estimating the remaining useful life based on the charging patterns and time spent in the charging process.
    
-**Output:** Describe the output(s) of your model
+**Output:**
 - **Remailing useful life**
+
 **Model Architecture:** 
 The model architecture being used in the code is a Random Forest Regressor combined with Bayesian optimization. Here's a breakdown of the architecture:
 Random Forest Regressor: This is a supervised learning algorithm that uses an ensemble of decision trees to perform regression tasks. It creates multiple decision trees, each trained on a random subset of the training data, and then combines their predictions to produce the final output.
