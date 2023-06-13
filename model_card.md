@@ -35,6 +35,12 @@ The best hyperparameters found through Bayesian optimization are then used to cr
 
 Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. 
 To evaluate the performance of the model, the metrics Mean Absolute Error (MAE) was used on a training set of the data. The MAE measures the average absolute difference between the predicted RUL values and the true RUL values. It quantifies the magnitude of prediction errors without considering their direction.
+The model showed good results for predicting RUL with an MSE of 760. The model also showed that the automated baysian optimisation converged on hyperparameters quicker that the grid search.
+
+![Screenshot](bayesian_vs_gridsearch.png)
+![Screenshot](baysian_opt_Results.png)
+![Screenshot](model_performance.png)
+
 ## Limitations
 
 - **Limited generalizability**: The model's was trained on NMC-LCO 18650 battery dataset that represented measurements from over 1000 NMC-LCO 18650 cells. Performance of the model is constrained by this specific dataset used for training. The training data is limited in terms of battery types, operating conditions, or usage patterns, the model's predictions may not generalize well to batteries outside this training set. 
